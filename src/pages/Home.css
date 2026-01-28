@@ -16,7 +16,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
@@ -31,13 +32,17 @@ body {
   flex-direction: column;
 }
 
-#root, .App {
+#root,
+.App {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   line-height: 1.2;
@@ -45,7 +50,8 @@ h1, h2, h3, h4 {
 
 .container {
   width: 100%;
-  max-width: 1400px; /* Increased for larger screens */
+  max-width: 1400px;
+  /* Increased for larger screens */
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -119,15 +125,17 @@ h1, h2, h3, h4 {
 
 /* HERO SECTION - Full Viewport Height */
 .hero {
-  min-height: 100vh;
+  min-height: 60vh;
   height: 100vh;
-  background: linear-gradient(135deg, rgba(11, 60, 93, 0.92) 0%, rgba(30, 136, 229, 0.88) 100%), 
-              url('https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
+  background: 
+  /* linear-gradient(135deg, rgba(11, 60, 93, 0.92) 0%, rgba(30, 136, 229, 0.88) 100%), */
+    url('https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
   display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
-  margin-top: 0;
+  margin-top: 90px;
+  /* margin-left: 1111px; */
 }
 
 .hero::before {
@@ -335,7 +343,8 @@ h1, h2, h3, h4 {
   margin: 0 auto;
 }
 
-.location, .usage {
+.location,
+.usage {
   background-color: white;
   border-radius: 15px;
   overflow: hidden;
@@ -343,22 +352,26 @@ h1, h2, h3, h4 {
   transition: var(--transition);
 }
 
-.location:hover, .usage:hover {
+.location:hover,
+.usage:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-.location-header, .usage-header {
+.location-header,
+.usage-header {
   background: linear-gradient(135deg, var(--primary) 0%, #0d4a75 100%);
   color: white;
   padding: 25px 30px;
 }
 
-.location-header h2, .usage-header h2 {
+.location-header h2,
+.usage-header h2 {
   font-size: 1.8rem;
 }
 
-.location-body, .usage-body {
+.location-body,
+.usage-body {
   padding: 30px;
 }
 
@@ -494,7 +507,7 @@ h1, h2, h3, h4 {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
   color: white;
   padding: 25px;
   transition: var(--transition);
@@ -519,6 +532,7 @@ footer {
   color: white;
   padding: 80px 0 40px;
   margin-top: auto;
+  width: 1935px;
 }
 
 .footer-content {
@@ -557,7 +571,8 @@ footer {
   line-height: 1.8;
 }
 
-.footer-contact h3, .footer-quick-links h3 {
+.footer-contact h3,
+.footer-quick-links h3 {
   font-size: 1.5rem;
   margin-bottom: 25px;
   color: white;
@@ -565,7 +580,8 @@ footer {
   display: inline-block;
 }
 
-.footer-contact h3::after, .footer-quick-links h3::after {
+.footer-contact h3::after,
+.footer-quick-links h3::after {
   content: '';
   position: absolute;
   bottom: -8px;
@@ -634,6 +650,7 @@ footer {
     opacity: 0;
     transform: translateY(40px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -642,37 +659,44 @@ footer {
 
 /* Cursor animation for hero section */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
 }
 
 /* RESPONSIVE ADJUSTMENTS */
 @media (min-width: 1400px) {
-  .container, .header-content {
+
+  .container,
+  .header-content {
     max-width: 1600px;
   }
-  
+
   .hero-content h1 {
     font-size: 5rem;
   }
-  
+
   .hero-content span {
     font-size: 5.5rem;
   }
-  
+
   .hero-content p {
     font-size: 1.4rem;
     max-width: 800px;
   }
-  
+
   .highlight-items {
     grid-template-columns: repeat(4, 1fr);
   }
-  
+
   .details-content {
     grid-template-columns: 1fr 1fr;
   }
-  
+
   .gallery-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -682,11 +706,11 @@ footer {
   .hero-content h1 {
     font-size: 3.5rem;
   }
-  
+
   .hero-content span {
     font-size: 4rem;
   }
-  
+
   .container {
     max-width: 1140px;
   }
@@ -696,24 +720,24 @@ footer {
   .hero-content h1 {
     font-size: 3rem;
   }
-  
+
   .hero-content span {
     font-size: 3.5rem;
   }
-  
+
   .hero-content p {
     font-size: 1.2rem;
   }
-  
+
   .details-content {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  
+
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .highlight-items {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -725,49 +749,55 @@ footer {
     gap: 20px;
     text-align: center;
   }
-  
+
   .hero {
     height: auto;
     min-height: 100vh;
     padding: 120px 0 80px;
     text-align: center;
   }
-  
+
   .hero-content h1 {
     font-size: 2.5rem;
   }
-  
+
   .hero-content span {
     font-size: 3rem;
   }
-  
+
   .hero-content p {
     font-size: 1.1rem;
   }
-  
+
   .cta {
     padding: 18px 35px;
   }
-  
-  .section-title, .highlights h2, .gallery h2 {
+
+  .section-title,
+  .highlights h2,
+  .gallery h2 {
     font-size: 2rem;
   }
-  
-  .details-content, .highlight-items, .gallery-grid {
+
+  .details-content,
+  .highlight-items,
+  .gallery-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .footer-content {
     grid-template-columns: 1fr;
     text-align: center;
     gap: 40px;
   }
-  
+
   .contact-item {
     justify-content: center;
   }
-  
-  .footer-logo::after, .footer-contact h3::after, .footer-quick-links h3::after {
+
+  .footer-logo::after,
+  .footer-contact h3::after,
+  .footer-quick-links h3::after {
     left: 50%;
     transform: translateX(-50%);
   }
@@ -777,23 +807,25 @@ footer {
   .hero-content h1 {
     font-size: 2rem;
   }
-  
+
   .hero-content span {
     font-size: 2.5rem;
   }
-  
+
   .hero-content p {
     font-size: 1rem;
   }
-  
+
   .container {
     padding: 0 20px;
   }
-  
-  .highlight-item, .location-body, .usage-body {
+
+  .highlight-item,
+  .location-body,
+  .usage-body {
     padding: 25px 20px;
   }
-  
+
   .gallery-item {
     height: 250px;
   }
