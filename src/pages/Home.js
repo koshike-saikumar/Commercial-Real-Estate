@@ -61,34 +61,48 @@ function Home() {
           </a>
           <a href="tel:9543999997" className="call-btn">
             <i className="fas fa-phone-alt"></i>
-            <span>9543 999 997</span>
+            <span>96034 47633</span>
           </a>
         </div>
       </header>
 
       {/* HERO SECTION */}
-      <section className="hero">
-        <div className="hero-overlay"></div>
-        <div className="container">
-          <div className="hero-content">
-            <h1>
-              COMMERCIAL <br />
-              <span>LAND FOR SALE</span>
-            </h1>
-            <p>Premium commercial land available in the prime location of Kalapet, Puducherry. Perfect for hotels, restaurants, showrooms, and commercial complexes.</p>
-            <a 
-              href="https://wa.me/919543999997" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="cta"
-              onClick={handleWhatsAppClick}
-            >
-              <i className="fab fa-whatsapp"></i>
-              INQUIRE NOW
-            </a>
-          </div>
-        </div>
-      </section>
+    <section className="hero">
+  <div className="hero-slider">
+    <div className="slide slide1"></div>
+    <div className="slide slide2"></div>
+    <div className="slide slide3"></div>
+  </div>
+
+  <div className="hero-overlay"></div>
+
+  <div className="container">
+    <div className="hero-content">
+      <h1>
+       PREMIUM COMMERCIAL <br />
+        <span>LAND FOR LEASE</span>
+      </h1>
+
+      <p>
+        Premium commercial land available in the prime location of Nellore,
+        Andhra Pradesh. Perfect for Shoping Complex, hotels, restaurants, showrooms, and commercial
+        complexes.
+      </p>
+
+      <a
+        href="https://wa.me/919603447633"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="cta"
+        onClick={handleWhatsAppClick}
+      >
+        <i className="fab fa-whatsapp"></i>
+        INQUIRE NOW
+      </a>
+    </div>
+  </div>
+</section>
+
 
       {/* HIGHLIGHTS */}
       <section className="highlights" id="highlights">
@@ -99,8 +113,8 @@ function Home() {
               <div className="highlight-icon">
                 <i className="fas fa-road"></i>
               </div>
-              <h3>East Coast Road</h3>
-              <p>Prime location on the scenic ECR road</p>
+              <h3>Opposite CMR Shopping Mall</h3>
+              <p>High-visibility commercial land located directly opposite CMR Shopping Mall</p>
             </div>
             <div className="highlight-item">
               <div className="highlight-icon">
@@ -137,12 +151,12 @@ function Home() {
                 <h2>Location Details</h2>
               </div>
               <div className="location-body">
-                <p><i className="fas fa-map-marker-alt"></i> <strong>Address:</strong> Kalapet, ECR Road, Puducherry</p>
-                <p><i className="fas fa-info-circle"></i> <strong>Landmark:</strong> Before RTO Checkpost</p>
+                <p><i className="fas fa-map-marker-alt"></i> <strong>Address:</strong>Andhra Pradesh 524001</p>
+                <p><i className="fas fa-info-circle"></i> <strong>Landmark:</strong> Brindavan Colony, Nellore</p>
                 <div className="map-container">
                   <iframe 
                     title="Property Location Map"
-                    src="https://maps.google.com/maps?q=Kalapet%2C%20Puducherry&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3863.51599970602!2d79.9826552!3d14.455034!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4c8cc8181d1ad1%3A0x55b95d08d24068c8!2sKanakaMahal!5e0!3m2!1sen!2sin!4v1769592454809!5m2!1sen!2sin"
                     allowFullScreen
                   >
                   </iframe>
@@ -150,21 +164,54 @@ function Home() {
               </div>
             </div>
             
-            <div className="usage">
-              <div className="usage-header">
-                <h2>Recommended Uses</h2>
-              </div>
-              <div className="usage-body">
-                <ul className="usage-list">
-                  <li><i className="fas fa-check-circle"></i> Hotels & Resorts</li>
-                  <li><i className="fas fa-check-circle"></i> Restaurants & Cafes</li>
-                  <li><i className="fas fa-check-circle"></i> Showrooms & Retail</li>
-                  <li><i className="fas fa-check-circle"></i> Commercial Complex</li>
-                  <li><i className="fas fa-check-circle"></i> Office Buildings</li>
-                  <li><i className="fas fa-check-circle"></i> Educational Institutions</li>
-                </ul>
-              </div>
-            </div>
+          <div className="usage">
+  <div className="usage-header">
+    <h2>Recommended Uses</h2>
+  </div>
+
+  <div className="usage-body">
+    <div className="usage-slider">
+      
+      <div className="usage-slide uslide1">
+        <div className="usage-overlay">
+          <h3>Hotels & Resorts</h3>
+        </div>
+      </div>
+
+      <div className="usage-slide uslide2">
+        <div className="usage-overlay">
+          <h3>Restaurants & Cafes</h3>
+        </div>
+      </div>
+
+      <div className="usage-slide uslide3">
+        <div className="usage-overlay">
+          <h3>Showrooms & Retail</h3>
+        </div>
+      </div>
+
+      <div className="usage-slide uslide4">
+        <div className="usage-overlay">
+          <h3>Commercial Complex</h3>
+        </div>
+      </div>
+
+      <div className="usage-slide uslide5">
+        <div className="usage-overlay">
+          <h3>Office Buildings</h3>
+        </div>
+      </div>
+
+      <div className="usage-slide uslide6">
+        <div className="usage-overlay">
+          <h3>Educational Institutions</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
           </div>
         </div>
       </section>
@@ -214,18 +261,18 @@ function Home() {
           <div className="footer-content">
             <div className="footer-about">
               <div className="footer-logo">DARVESH REALTOR</div>
-              <p>Specializing in prime commercial and residential properties in Puducherry. Trusted real estate promoters with over 15 years of experience.</p>
+              <p>Specializing in prime commercial and residential properties in Andhra Pradesh. Trusted real estate promoters with over 15 years of experience.</p>
             </div>
             
             <div className="footer-contact">
               <h3>Contact Us</h3>
               <div className="contact-item">
                 <i className="fas fa-phone-alt"></i>
-                <div>9543 999 997</div>
+                <div>96034 47633</div>
               </div>
               <div className="contact-item">
                 <i className="fas fa-map-marker-alt"></i>
-                <div>Kalapet, ECR Road, Puducherry</div>
+                <div>Brindavan Colony, Nellore, Andhra Pradesh</div>
               </div>
               <div className="contact-item">
                 <i className="fas fa-envelope"></i>
