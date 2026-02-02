@@ -60,7 +60,7 @@ function Home() {
               ROYAL REALTOR       </a>
           <a href="tel:9543999997" className="call-btn">
             <i className="fas fa-phone-alt"></i>
-            <span>96034 47633</span>
+            <span>9618875158</span>
           </a>
         </div>
       </header>
@@ -89,7 +89,7 @@ function Home() {
             </p>
 
             <a
-              href="https://wa.me/919603447633"
+              href="https://wa.me/919618875158"
               target="_blank"
               rel="noopener noreferrer"
               className="cta"
@@ -307,7 +307,7 @@ function Home() {
 
             <div className="usage">
               <div className="usage-header">
-                <h2>Recommended Uses</h2>
+                <h2>Property Gallery</h2>
               </div>
 
               <div className="usage-body">
@@ -358,43 +358,36 @@ function Home() {
       </section>
 
       {/* GALLERY */}
-      <section className="gallery" id="gallery">
-        <div className="container">
-          <h2>Property Gallery</h2>
-          <div className="gallery-grid">
-            <div className="gallery-item">
-              <img
-                src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
-                alt="Commercial Land"
-                loading="lazy"
-              />
-              <div className="gallery-overlay">
-                <h3>Premium Commercial Land</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img
-                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
-                alt="Location"
-                loading="lazy"
-              />
-              <div className="gallery-overlay">
-                <h3>Prime ECR Road Location</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img
-                src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
-                alt="Area View"
-                loading="lazy"
-              />
-              <div className="gallery-overlay">
-                <h3>Scenic Surroundings</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section className="gallery horizontal-gallery" id="gallery">
+  <div className="container">
+    <h2>Recommended Uses</h2>
+
+    <div className="h-scroll">
+
+      <div className="h-card tall">
+        <img src="https://arcmaxarchitect.com/sites/default/files/styles/portfolioslider_1024_950/public/2025-09/Best%20Architects%20for%20Mini%20Shopping%20Mall%20Design%20in%20Delhi%2C%20mumbai%2C%20chennai%2C%20bangalore%20and%20hyderabad.jpg" />
+        <span>Shopping Mall</span>
+      </div>
+
+      <div className="h-card tall">
+        <img src="https://image.made-in-china.com/202f0j00fbAihymlLOYa/Supermarket-Shopping-Mall-Prefabricated-Modern-Steel-Structures-Buildings.webp" />
+        <span>Supermarket</span>
+      </div>
+
+      <div className="h-card tall">
+        <img src="https://jewelryshowcasedepot.com/image/catalog/projects/best_jewellery_shop_interior_design/fashion-jewellery-shop-interior-design.jpg" />
+        <span>Jewellery Showroom</span>
+      </div>
+
+      <div className="h-card tall">
+        <img src="https://aestech-prod.s3.eu-central-1.amazonaws.com/64088c7de5a16711992220.webp" />
+        <span>Brand Showrooms</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       {/* FOOTER */}
       <footer id="contact">
@@ -409,7 +402,7 @@ function Home() {
               <h3>Contact Us</h3>
               <div className="contact-item">
                 <i className="fas fa-phone-alt"></i>
-                <div>96034 47633</div>
+                <div>9618875158</div>
               </div>
               <div className="contact-item">
                 <i className="fas fa-map-marker-alt"></i>
