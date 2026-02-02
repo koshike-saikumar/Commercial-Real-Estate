@@ -202,7 +202,7 @@ function Home() {
                 <i className="fas fa-train"></i>
               </div>
               <h3>Nellore Railway Station</h3>
-              <p>Just 3km from Nellore Railway Station</p>
+              <p>Just 500m from Nellore Railway Station</p>
             </div>
             <div className="highlight-item">
               <div className="highlight-icon">
