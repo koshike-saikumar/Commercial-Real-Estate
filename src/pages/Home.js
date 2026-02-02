@@ -103,11 +103,93 @@ function Home() {
   </div>
 </section>
 
+<section className="highlights">
+  <div className="container">
+    <h2>Property Highlights</h2>
+
+  <div className="prime-slider">
+  <div className="prime-slide-track">
+
+    {/* ORIGINAL SLIDES */}
+    <div className="highlight-item">
+      <div className="highlight-icon">
+        <i className="fas fa-ruler-combined"></i>
+      </div>
+      <h3>Total Land Area</h3>
+      <p>13,000 Sq.Ft</p>
+    </div>
+
+    <div className="highlight-item">
+      <div className="highlight-icon">
+        <i className="fas fa-users"></i>
+      </div>
+      <h3>High Footfall</h3>
+      <p>Excellent visibility & crowd movement</p>
+    </div>
+
+    <div className="highlight-item">
+      <div className="highlight-icon">
+        <i className="fas fa-elevator"></i>
+      </div>
+      <h3>Lift Facility</h3>
+      <p>Modern lift access</p>
+    </div>
+
+    <div className="highlight-item">
+      <div className="highlight-icon">
+        <i className="fas fa-parking"></i>
+      </div>
+      <h3>Ample Parking</h3>
+      <p>Spacious parking</p>
+    </div>
+
+    {/* DUPLICATE SLIDES (same order) */}
+    <div className="highlight-item">
+      <div className="highlight-icon">
+        <i className="fas fa-ruler-combined"></i>
+      </div>
+      <h3>Total Land Area</h3>
+      <p>13,000 Sq.Ft</p>
+    </div>
+
+    <div className="highlight-item">
+      <div className="highlight-icon">
+        <i className="fas fa-users"></i>
+      </div>
+      <h3>High Footfall</h3>
+      <p>Excellent visibility & crowd movement</p>
+    </div>
+
+    <div className="highlight-item">
+      <div className="highlight-icon">
+        <i className="fas fa-elevator"></i>
+      </div>
+      <h3>Lift Facility</h3>
+      <p>Modern lift access</p>
+    </div>
+
+    <div className="highlight-item">
+      <div className="highlight-icon">
+        <i className="fas fa-parking"></i>
+      </div>
+      <h3>Ample Parking</h3>
+      <p>Spacious parking</p>
+    </div>
+
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+
 
       {/* HIGHLIGHTS */}
       <section className="highlights" id="highlights">
         <div className="container">
           <h2>Prime Location Highlights</h2>
+
           <div className="highlight-items">
             <div className="highlight-item">
               <div className="highlight-icon">
@@ -118,17 +200,17 @@ function Home() {
             </div>
             <div className="highlight-item">
               <div className="highlight-icon">
-                <i className="fas fa-graduation-cap"></i>
+                <i className="fas fa-train"></i>
               </div>
-              <h3>Near Law College</h3>
-              <p>Just 500m from Pondicherry Law College</p>
+              <h3>Nellore Railway Station</h3>
+              <p>Just 3km from Nellore Railway Station</p>
             </div>
             <div className="highlight-item">
               <div className="highlight-icon">
-                <i className="fas fa-umbrella-beach"></i>
+               <i className="fas fa-water"></i>
               </div>
-              <h3>Kalapet Beach</h3>
-              <p>Only 300m from the beautiful Kalapet Beach</p>
+              <h3>Penna River</h3>
+              <p>Only 1.5km from the beautiful Penna River</p>
             </div>
             <div className="highlight-item">
               <div className="highlight-icon">
@@ -138,8 +220,68 @@ function Home() {
               <p>DTCP & RERA approved for hassle-free development</p>
             </div>
           </div>
+          
         </div>
       </section>
+
+
+
+{/* LEASING DETAILS */}
+<section className="lease-details" id="lease-details">
+  <div className="container">
+    <h2>Leasing Details</h2>
+
+    <div className="lease-grid">
+
+      <div className="lease-card">
+        <i className="fas fa-rupee-sign"></i>
+        <h3>Lease Price</h3>
+        <p>
+          <strong>₹90 – ₹130</strong> <span>per Sq.Ft</span>
+        </p>
+      </div>
+
+      <div className="lease-card">
+        <i className="fas fa-building"></i>
+        <h3>Total Built-up Area</h3>
+        <p>
+          <strong>23,400</strong> <span>Sq.Ft</span>
+        </p>
+      </div>
+
+      <div className="lease-card">
+        <i className="fas fa-layer-group"></i>
+        <h3>Available Floors</h3>
+        <p>
+          Ground Floor<br />
+          First Floor<br />
+          Second Floor
+        </p>
+      </div>
+
+    </div>
+
+    <div className="lease-cta">
+      <a href="tel:9618875158">
+        <i className="fas fa-phone-alt"></i>
+        CALL / WHATSAPP NOW
+      </a>
+      <p>Serious Business Enquiries Only</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
 
       {/* DETAILS */}
       <section className="details" id="details">

@@ -927,3 +927,145 @@ footer {
   40% { opacity: 0; }
   100% { opacity: 0; }
 }
+.prime-slider {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.prime-slide-track {
+  display: flex;
+  gap: 30px;
+  width: max-content;
+  animation: infiniteScroll 20s linear infinite;
+}
+
+.prime-slide-track .highlight-item {
+  min-width: 300px;
+  flex-shrink: 0;
+}
+
+/* 🔥 TRUE infinite scroll */
+@keyframes infiniteScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.prime-slider:hover .prime-slide-track {
+  animation-play-state: paused;
+}
+
+.prime-slide-track {
+  will-change: transform;
+}
+
+
+/* LEASE DETAILS */
+.lease-details {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #0b3c5d, #081f2d);
+  color: #fff;
+}
+
+.lease-details h2 {
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 2.5rem;
+  position: relative;
+  color: #fff;
+}
+
+.lease-details h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: var(--secondary);
+  border-radius: 2px;
+}
+
+.lease-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto 60px;
+}
+
+.lease-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-align: center;
+  transition: var(--transition);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.lease-card:hover {
+  transform: translateY(-12px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.lease-card i {
+  font-size: 3rem;
+  color: var(--secondary);
+  margin-bottom: 20px;
+}
+
+.lease-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.lease-card p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.lease-card p strong {
+  font-size: 1.8rem;
+  color: var(--secondary);
+}
+
+.lease-card span {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+}
+
+/* CTA */
+.lease-cta {
+  text-align: center;
+}
+
+.lease-cta a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 40px;
+  background: linear-gradient(135deg, var(--secondary), #ffd95a);
+  color: var(--dark);
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 40px;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: var(--transition);
+}
+
+.lease-cta a:hover {
+  transform: scale(1.08);
+}
+
+.lease-cta p {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
