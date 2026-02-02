@@ -365,22 +365,30 @@ function Home() {
     <div className="h-scroll">
 
       <div className="h-card tall">
-        <img src="https://arcmaxarchitect.com/sites/default/files/styles/portfolioslider_1024_950/public/2025-09/Best%20Architects%20for%20Mini%20Shopping%20Mall%20Design%20in%20Delhi%2C%20mumbai%2C%20chennai%2C%20bangalore%20and%20hyderabad.jpg" />
+        <img src="https://arcmaxarchitect.com/sites/default/files/styles/portfolioslider_1024_950/public/2025-09/Best%20Architects%20for%20Mini%20Shopping%20Mall%20Design%20in%20Delhi%2C%20mumbai%2C%20chennai%2C%20bangalore%20and%20hyderabad.jpg" 
+        alt="Shopping Mall commercial building exterior"
+  loading="lazy"/>
         <span>Shopping Mall</span>
       </div>
 
       <div className="h-card tall">
-        <img src="https://image.made-in-china.com/202f0j00fbAihymlLOYa/Supermarket-Shopping-Mall-Prefabricated-Modern-Steel-Structures-Buildings.webp" />
+        <img src="https://image.made-in-china.com/202f0j00fbAihymlLOYa/Supermarket-Shopping-Mall-Prefabricated-Modern-Steel-Structures-Buildings.webp" 
+        alt="Supermarket"
+  loading="lazy"/>
         <span>Supermarket</span>
       </div>
 
       <div className="h-card tall">
-        <img src="https://jewelryshowcasedepot.com/image/catalog/projects/best_jewellery_shop_interior_design/fashion-jewellery-shop-interior-design.jpg" />
+        <img src="https://jewelryshowcasedepot.com/image/catalog/projects/best_jewellery_shop_interior_design/fashion-jewellery-shop-interior-design.jpg" 
+        alt="Jewellery Showroom"
+  loading="lazy"/>
         <span>Jewellery Showroom</span>
       </div>
 
       <div className="h-card tall">
-        <img src="https://aestech-prod.s3.eu-central-1.amazonaws.com/64088c7de5a16711992220.webp" />
+        <img src="https://aestech-prod.s3.eu-central-1.amazonaws.com/64088c7de5a16711992220.webp" 
+        alt="Brand Showrooms"
+  loading="lazy"/>
         <span>Brand Showrooms</span>
       </div>
 
